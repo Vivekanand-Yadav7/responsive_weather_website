@@ -8,6 +8,7 @@ async function getWeather(city) {
     if(info.status == 404){
         error.style.display = 'block';
         weather.style.display = 'none'; 
+        document.querySelector("#container").style.justifyContent = 'flex-start';
     }
     else{
     var infoObject = await info.json();
