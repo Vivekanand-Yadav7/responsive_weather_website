@@ -40,6 +40,7 @@ async function getWeather(city) {
     weather.style.visibility = 'visible';
     error.style.display = 'none';
 }
+   document.querySelector("#container input").blur();
 };
 
 
