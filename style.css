@@ -34,7 +34,7 @@
     background-color: #ebfffc;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border: white;
+    outline: none;
 }
 .search button{
     border: 0;
