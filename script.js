@@ -20,21 +20,33 @@ async function getWeather(city) {
     
     if(infoObject.weather[0].main == 'Clear'){
         weatherImage.src = 'images/clear.png';
+        document.querySelector("body").style.backgroundImage.url =  'background_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     else if(infoObject.weather[0].main == 'Clouds'){
         weatherImage.src = 'images/clouds.png';
+        document.querySelector("body").style.backgroundImage.url =  'Cloudbackground_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     else if(infoObject.weather[0].main == 'Mist'){
         weatherImage.src = 'images/mist.png';
+        document.querySelector("body").style.backgroundImage.url =  'Mistbackground_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     else if(infoObject.weather[0].main == 'Drizzle'){
         weatherImage.src = 'images/drizzle.png';
+        document.querySelector("body").style.backgroundImage.url =  'Drizzlebackground_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     else if(infoObject.weather[0].main == 'Humidity'){
         weatherImage.src = 'images/humidity.png';
+        document.querySelector("body").style.backgroundImage.url =  'Humiditybackground_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     else if(infoObject.weather[0].main == 'Rain'){
         weatherImage.src = 'images/rain.png';
+        document.querySelector("body").style.backgroundImage.url =  'Rainbackground_image.jpg';
+        document.querySelector("body").style.backgroundSize = 'cover';
     }
     weather.style.display = 'block';
     weather.style.visibility = 'visible';
